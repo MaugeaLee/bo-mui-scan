@@ -83,7 +83,12 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open '
 );
 
 // 기본 테마 설정 ( MUI 사용시 테마 설정 권장 )
-const defaultTheme = createTheme();
+const defaultTheme = createTheme()
+const cardData = [
+    { id: 1, device_name: 'BO01A11', mac: 'FF-FF-FF-FF-FF-FF', local_ip: '192.168.0.2' },
+    { id: 2, device_name: 'BO01A12', mac: 'CC-CC-CC-CC-CC-CC', local_ip: '192.168.0.2' },
+    { id: 3, device_name: 'BO01A13', mac: 'DD-DD-DD-DD-DD-DD', local_ip: '192.168.0.2' },
+]
 
 function DashboardContent(){
     const [open, setOpen] = React.useState(true); // 사이드바 열림/ 닫힘 상태
